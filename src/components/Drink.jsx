@@ -12,6 +12,7 @@ function Drink(props){
       <p>{props.price}</p>
       <p>{props.remaining}</p>
     </div>
+
   )
 }
 
@@ -23,5 +24,9 @@ Drink.propTypes = {
   price: PropTypes.string,
   remaining: PropTypes.string
 }
+if(this.price === '7'){
+  alert('Hi')
+}
+
 
 export default Drink
