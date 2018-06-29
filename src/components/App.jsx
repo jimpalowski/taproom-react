@@ -3,10 +3,13 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './Header'
 import DrinkList from './DrinkList'
 import NewDrinkForm from './NewDrinkForm'
+import logo from '../assets/images/logo.png'
+
 
 function App(){
   return (
     <div>
+
       <style global jsx>{`
         body{
           background-image:url("https://art.ngfiles.com/images/319000/319689_zeedox_bar-background-art.png?f1410841851");
@@ -18,8 +21,10 @@ function App(){
         }
       `}
       </style>
+      <img src={logo}/>
       <Header/>
       <Switch>
+
       <Route exact path='/' component={DrinkList} />
       <Route path='/newdrink' component={NewDrinkForm} />
       </Switch>
