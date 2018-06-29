@@ -7,6 +7,17 @@ import NewDrinkForm from './NewDrinkForm'
 function App(){
   return (
     <div>
+      <style global jsx>{`
+        body{
+          background-image:url("https://art.ngfiles.com/images/319000/319689_zeedox_bar-background-art.png?f1410841851");
+          background-size:     cover;                      /* <------ */
+          background-repeat:   no-repeat;
+          background-position: center center;
+          color:white;
+          text-align:center;
+        }
+      `}
+      </style>
       <Header/>
       <Switch>
       <Route exact path='/' component={DrinkList} />
