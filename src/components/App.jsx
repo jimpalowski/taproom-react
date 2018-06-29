@@ -24,7 +24,7 @@ function App(){
       <Route path='/newdrink' component={NewDrinkForm} />
       </Switch>
     </div>
-  )
+  );
 }
 
 export default App
