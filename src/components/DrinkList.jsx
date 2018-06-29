@@ -49,7 +49,7 @@ function DrinkList(){
           description={drink.description}
           abv={drink.abv}
           price={drink.price}
-          remaining{drink.remaining}
+          remaining={drink.remaining}
           key={index} />
       )}
     </div>

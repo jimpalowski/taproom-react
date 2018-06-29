@@ -4,12 +4,14 @@ import PropTypes from 'prop-types'
 
 function Drink(props){
   return(
-    <h3>{props.name}</h3>
-    <p>{props.brewer}</p>
-    <p>{props.description}</p>
-    <p>{props.abv}</p>
-    <p>{props.price}</p>
-    <p>{props.remaining}</p>
+    <div>
+      <h3>{props.name}</h3>
+      <p>{props.brewer}</p>
+      <p>{props.description}</p>
+      <p>{props.abv}</p>
+      <p>{props.price}</p>
+      <p>{props.remaining}</p>
+    </div>
   )
 }
 
