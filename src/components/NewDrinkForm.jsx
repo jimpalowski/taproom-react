@@ -1,4 +1,8 @@
-import React from 'react';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { v4 }
+
+
 
 function NewDrinkForm(){
   return (
@@ -18,7 +22,7 @@ function NewDrinkForm(){
         <button type='submit'>Submit Drink!</button>
       </form>
     </div>
-  );
+  )
 }
 
-export default NewDrinkForm;
+export default NewDrinkForm
