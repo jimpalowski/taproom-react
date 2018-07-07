@@ -5,7 +5,7 @@ function ConfirmationQuestions(props){
   return (
     <div>
       <p>Do you want to add a new drink?</p>
-      <button onClick={props.onTroubleshootingConfirmation}>Yes</button>
+      <button onClick={props.onTroubleshootingConfirmation}>Yes!</button>
     </div>
   )
 }
