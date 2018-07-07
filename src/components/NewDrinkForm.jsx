@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { v4 } from 'uuid'
+import Moment from 'moment';
+
 
 function NewDrinkForm(props) {
   let _name = null
@@ -8,20 +10,17 @@ function NewDrinkForm(props) {
   let _price = null
   let _abv = null
   let _description = null
-}
 
-function handleNewDrinkFormSubmission(event) {
-  event.preventDefault()
-  props.onNewDrinkCreation({name: _name.value, brewer: _brewer.value, price: _price.value, abv: _abv.value, description: _description.value, id: v4()})
-  _name.value = ''
-  _brewer.value = ''
-  _price.value = ''
-  _abv.value = ''
-  _description.value = ''
-}
+  function handleNewDrinkFormSubmission(event) {
+    event.preventDefault()
+    props.onNewDrinkCreation({name: _name.value, brewer: _brewer.value, price: _price.value, abv: _abv.value, description: _description.value, id: v4(), timeOpen: new Moment()})
+    _name.value = ''
+    _brewer.value = ''
+    _price.value = ''
+    _abv.value = ''
+    _description.value = ''
+  }
 
-
-function NewDrinkForm(){
   return (
     <div>
       <form onSubmit={handleNewDrinkFormSubmission}>

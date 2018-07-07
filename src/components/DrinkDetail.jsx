@@ -5,11 +5,11 @@ function DrinkDetail(props){
   return (
     <div>
       <hr/>
-      <h1>{props.selectedDrink.name} - {props.selectedDrink.brewer}</h1>
+      <h1>{props.selectedDrink.name} - {props.selectedDrink.location}</h1>
       <h2>Submitted {props.selectedDrink.formattedWaitTime} ago</h2>
-      <h4><em>{props.selectedDrink.price}</em></h4>
+      <h4><em>{props.selectedDrink.description}</em></h4>
     </div>
-  );
+  )
 }
 
 DrinkDetail.propTypes = {
