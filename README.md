@@ -39,4 +39,7 @@ _If you run into a problem, contact me at palowskijim@gmail.com_
 * You should have received a copy of the GNU General Public License
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 * Copyright (c) 2018 _jim palowski@epicodus_
+
+## Diagram
+![](src/assets/images/taproom.jpg)
 ####
